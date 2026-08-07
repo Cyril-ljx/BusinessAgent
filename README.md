@@ -31,10 +31,6 @@ BusinessAgent 是一个面向招投标文档场景的 Web 应用。系统从 DOC
 
 ![企业知识库](docs/images/02-knowledge-base.png)
 
-知识库列表会展示素材分类、子分类、有效期和文件信息，并提供预览、编辑和删除操作；技术章节可切换到独立列表进行管理。
-
-![知识库素材列表](docs/images/02b-knowledge-list.png)
-
 ### 项目列表
 
 查看当前用户创建的项目、处理状态、目录数量、风险统计和导出结果。
@@ -52,6 +48,14 @@ BusinessAgent 是一个面向招投标文档场景的 Web 应用。系统从 DOC
 左侧保留目录层级，右侧展示固定素材或生成内容，并支持人工编辑和重新导出。
 
 ![编辑工作台](docs/images/05-workbench.png)
+
+### 插入知识库资料
+
+在章节编辑器中打开“插入资料”，可按当前公司知识库搜索和选择素材。“证书/图片”页签展示素材缩略图和资质信息，“技术方案”页签展示技术母版章节的层级路径、图片数、表格数和字数。
+
+![插入证书和图片](docs/images/06-material-picker-certificates.png)
+
+![插入技术方案](docs/images/07-material-picker-tech.png)
 
 ## 技术架构
 
