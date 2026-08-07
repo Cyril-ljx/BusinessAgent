@@ -1,0 +1,38 @@
+# ============= Workflow & observability =============
+langgraph>=0.2.0
+langsmith>=0.1.0
+
+# ============= LLM providers =============
+# Bailian, Token Plan and Volcengine all use an OpenAI-compatible API.
+openai>=1.50.0
+# Optional provider supported by the codebase; harmless when not configured.
+anthropic>=0.40.0
+
+# ============= Document parsing & rendering =============
+python-docx>=1.1.0
+PyMuPDF>=1.24.0
+
+# ============= Web API =============
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.1
+python-multipart>=0.0.9
+
+# ============= Data models & configuration =============
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+python-dotenv>=1.0.0
+
+# ============= PostgreSQL storage =============
+SQLAlchemy>=2.0.0,<3.0.0
+psycopg2-binary>=2.9.0
+
+# ============= Logging =============
+loguru>=0.7.0
+
+# Legacy .doc conversion through Microsoft Word is Windows-only.
+# Linux deployments use the system LibreOffice package instead.
+pywin32>=306; sys_platform == "win32"
+
+# Not installed by default:
+# - Docling: current parser uses python-docx and PyMuPDF.
+# - PaddleOCR: optional scanned-PDF fallback; keep ENABLE_PDF_OCR=false when absent.

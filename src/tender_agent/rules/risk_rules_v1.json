@@ -1,0 +1,19 @@
+﻿{
+  "version": "v1.0.0",
+  "updated_at": "2026-05-28",
+  "rules": [
+    {"id":"QUAL_MISSING_MATERIAL","name":"资格材料缺失","category":"qualification","match_types":["missing_material"],"severity":"P1","fatal":true,"owner":"商务","suggestion":"补充对应资质/证照材料并重新匹配章节素材。"},
+    {"id":"RESP_INCOMPLETE","name":"响应内容不完整","category":"format","match_types":["incomplete_content"],"severity":"P2","fatal":false,"owner":"商务","suggestion":"补齐章节待补充项，确保必填章节完整响应。"},
+    {"id":"SCORING_COVERAGE","name":"评分项覆盖不足","category":"scoring","match_keywords":["评分","技术","商务","价格"],"severity":"P2","fatal":false,"owner":"技术","suggestion":"对照评分标准补充高分项证据与量化描述。"},
+    {"id":"INVALIDATION_RISK","name":"废标风险提示","category":"invalid","match_keywords":["废标","否决","无效"],"severity":"P0","fatal":true,"owner":"法务","suggestion":"优先核对该条款，必要时按招标要求补正或调整响应策略。"},
+    {"id":"CONTRACT_RISK","name":"合同条款风险","category":"contract","match_keywords":["违约","赔偿","付款","结算","罚则"],"severity":"P1","fatal":false,"owner":"法务","suggestion":"由法务复核合同条款并给出风险接受或修改建议。"},
+    {"id":"TIMELINE_RISK","name":"响应时限风险","category":"timeline","match_keywords":["工期","时限","截止","送达","响应时间"],"severity":"P1","fatal":false,"owner":"商务","suggestion":"统一工期和响应时限，确保不晚于招标要求。"},
+    {"id":"OUTLINE_SHELL_NUMBERED_NODE","name":"空壳编号目录","category":"format","match_types":["shell_numbered_node"],"severity":"P1","fatal":false,"owner":"商务","suggestion":"检查该目录项是否只剩编号或格式号，补回原文中的实义标题后再复检。"},
+    {"id":"OUTLINE_RESIDUAL_ORDINAL_PREFIX","name":"目录残留序号前缀","category":"format","match_types":["residual_ordinal_prefix"],"severity":"P1","fatal":false,"owner":"商务","suggestion":"检查子级目录是否残留原文序号前缀，必要时清理标题并确认父子层级正确。"},
+    {"id":"OUTLINE_ORPHAN_NODE","name":"孤儿目录节点","category":"format","match_types":["orphan_outline_node"],"severity":"P1","fatal":false,"owner":"商务","suggestion":"检查该节点是否缺失父章节，必要时调整到正确父级目录下。"},
+    {"id":"OUTLINE_SUSPICIOUS_SIBLING_PREFIX","name":"同名前缀兄弟节点","category":"format","match_types":["suspicious_sibling_prefix"],"severity":"P2","fatal":false,"owner":"商务","suggestion":"核对同一父级下共享前缀的目录项，确认是否存在标题截断、错挂或重复。"},
+    {"id":"OUTLINE_DEPTH_ANOMALY","name":"目录深度异常","category":"format","match_types":["outline_depth_anomaly"],"severity":"P2","fatal":false,"owner":"商务","suggestion":"检查过深目录是否符合招标原文层级，避免过度拆分或错挂。"},
+    {"id":"TEMPLATE_BACKFILL_MISSING","name":"范本原文未回填","category":"format","match_types":["template_backfill_missing"],"severity":"P1","fatal":false,"owner":"商务","suggestion":"定位招标文件原文范本并补入章节正文，避免仅保留占位提示。"},
+    {"id":"PLACEHOLDER_RESIDUE","name":"正文占位符残留","category":"format","match_types":["placeholder_residue"],"severity":"P2","fatal":false,"owner":"商务","suggestion":"清理正文中的待补充/人工填写占位符，并补齐对应内容。"}
+  ]
+}

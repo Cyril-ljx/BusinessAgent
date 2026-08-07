@@ -1,0 +1,28 @@
+{
+  "version": "v1",
+  "certificate_category_caps": {
+    "营业执照": 1,
+    "劳务派遣经营许可证": 1,
+    "人力资源服务许可证": 1,
+    "基本存款账户信息": 1,
+    "审计报告": 12,
+    "ISO认证体系证书": 1,
+    "企业荣誉": 2,
+    "企业纳税等级": 1,
+    "一般纳税人认定证明": 1,
+    "项目人员证书": 3,
+    "合作业绩": 3,
+    "项目奖项": 2
+  },
+  "default_certificate_cap": 3,
+  "no_item_heading_categories": ["审计报告", "合作业绩"],
+  "open_collection_markers": ["其他", "其它", "等", "资质", "资格", "荣誉", "证书"],
+  "supporting_headings": {
+    "项目人员证书": "项目人员资质证明材料"
+  },
+  "performance_heading": {
+    "markers": ["同类", "近3年", "近三年"],
+    "matched": "同类业绩证明材料",
+    "default": "业绩证明材料"
+  }
+}

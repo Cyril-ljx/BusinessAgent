@@ -1,0 +1,70 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+coverage/
+playwright-report/
+test-results/
+
+# IDE and agent state
+.idea/
+.vscode/
+.cursor/
+.claude/
+.codex/
+.agents/
+
+# OS files
+.DS_Store
+Thumbs.db
+%SystemDrive%/
+
+# Runtime uploads and generated documents
+data/upload/*
+!data/upload/.gitkeep
+data/output/*
+!data/output/.gitkeep
+data/storage/*
+!data/storage/.gitkeep
+
+# Knowledge-base binaries and customer material. Keep only schema/code.
+data/knowledge/certs/
+data/knowledge/master/
+data/knowledge/history/
+data/knowledge/companies/
+data/knowledge/shared/
+data/knowledge/imports/
+
+# Office lock files and local documents
+~$*
+*.docx~
+*.doc~
+
+# Local database/cache files
+*.db
+*.sqlite
+*.sqlite3
+*.duckdb
+*.db-shm
+*.db-wal
+
+# Temporary diagnostics
+.tmp/
+data/tmp/
+data/tmp_*/
+data/phase2_*.json
+outputs/
